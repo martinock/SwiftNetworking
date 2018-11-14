@@ -13,11 +13,18 @@ struct Article: Codable {
     let description: String?
 }
 
-//NOTE: Use CodingKeys when we want to map keys into our standard (eg: snakecase from reponse to camelcase)
+
 struct ArticleResponse: Codable {
     let totalResults: Int?
     var articles: [Article] = []
     let status: String?
+    
+    //NOTE: Use CodingKeys when we want to map keys into our standard (eg: snakecase from reponse to camelcase)
+//    enum CodingKeys: String, CodingKey {
+//        case total_results = "totalResults"
+//        case articles
+//        case status
+//    }
 }
 
 Alamofire
