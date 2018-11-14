@@ -15,7 +15,7 @@ struct Article: Codable {
 
 //NOTE: Use CodingKeys when we want to map keys into our standard (eg: snakecase from reponse to camelcase)
 struct ArticleResponse: Codable {
-    let totalResult: Int?
+    let totalResults: Int?
     var articles: [Article] = []
     let status: String?
 }
@@ -30,6 +30,15 @@ Alamofire
             let jsonDecoder = JSONDecoder()
             if let mappedResponse = try? jsonDecoder.decode(ArticleResponse.self, from: data) {
                 print(mappedResponse.articles)
+                
+                //NOTE: Need to check value before print, especially when the value is nil. Will remove "Optional()" when printing
+//                if let total = mappedResponse.totalResults {
+//                    print(total)
+//                }
+                
+                //NOTE: Give default value to optional response
+//                let total = mappedResponse.totalResults ?? 0
+//                print(total)
             }
         }
     }
