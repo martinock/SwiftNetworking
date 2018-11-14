@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815CF5230C7606C76442D567 /* Pods_SwiftNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC94503A08D1D80EC855339 /* Pods_SwiftNetworking.framework */; };
 		E5B4EE0D219BB0D800854E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B4EE0C219BB0D800854E7A /* AppDelegate.swift */; };
 		E5B4EE0F219BB0D800854E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B4EE0E219BB0D800854E7A /* ViewController.swift */; };
 		E5B4EE12219BB0D800854E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B4EE10219BB0D800854E7A /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BC94503A08D1D80EC855339 /* Pods_SwiftNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A394E1374034EF0BFA971924 /* Pods-SwiftNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetworking/Pods-SwiftNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		CBDB21D48EB838094B53DE1D /* Pods-SwiftNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetworking/Pods-SwiftNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		E5B4EE09219BB0D800854E7A /* SwiftNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B4EE0C219BB0D800854E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B4EE0E219BB0D800854E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		E5B4EE13219BB0DB00854E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5B4EE16219BB0DB00854E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B4EE18219BB0DB00854E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B4EE1E219BB77100854E7A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815CF5230C7606C76442D567 /* Pods_SwiftNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90B39F2657563DB3A94B5886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC94503A08D1D80EC855339 /* Pods_SwiftNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59E71A900E37D4421D934FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB21D48EB838094B53DE1D /* Pods-SwiftNetworking.debug.xcconfig */,
+				A394E1374034EF0BFA971924 /* Pods-SwiftNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5B4EE00219BB0D800854E7A = {
 			isa = PBXGroup;
 			children = (
 				E5B4EE0B219BB0D800854E7A /* SwiftNetworking */,
 				E5B4EE0A219BB0D800854E7A /* Products */,
+				C59E71A900E37D4421D934FA /* Pods */,
+				90B39F2657563DB3A94B5886 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				E5B4EE13219BB0DB00854E7A /* Assets.xcassets */,
 				E5B4EE15219BB0DB00854E7A /* LaunchScreen.storyboard */,
 				E5B4EE18219BB0DB00854E7A /* Info.plist */,
+				E5B4EE1E219BB77100854E7A /* MyPlayground.playground */,
 			);
 			path = SwiftNetworking;
 			sourceTree = "<group>";
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5B4EE1B219BB0DB00854E7A /* Build configuration list for PBXNativeTarget "SwiftNetworking" */;
 			buildPhases = (
+				4B0BBE9D59866B2C432713C5 /* [CP] Check Pods Manifest.lock */,
 				E5B4EE05219BB0D800854E7A /* Sources */,
 				E5B4EE06219BB0D800854E7A /* Frameworks */,
 				E5B4EE07219BB0D800854E7A /* Resources */,
+				3C58ED54971985ABB6145D4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C58ED54971985ABB6145D4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetworking/Pods-SwiftNetworking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetworking/Pods-SwiftNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B0BBE9D59866B2C432713C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5B4EE05219BB0D800854E7A /* Sources */ = {
@@ -280,9 +355,11 @@
 		};
 		E5B4EE1C219BB0DB00854E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDB21D48EB838094B53DE1D /* Pods-SwiftNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftNetworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.SwiftNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +375,11 @@
 		};
 		E5B4EE1D219BB0DB00854E7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A394E1374034EF0BFA971924 /* Pods-SwiftNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftNetworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.SwiftNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
